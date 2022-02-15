@@ -62,6 +62,7 @@ export default function Edit() {
               label="Nome"
               variant="outlined"
               value={personData.name}
+              required
               InputLabelProps={{ shrink: true }}
               onChange={(e) => {
                 setPersonData({ name: e.target.value });
@@ -74,6 +75,7 @@ export default function Edit() {
               label="Endereço"
               variant="outlined"
               style={{ marginTop: '10px' }}
+              required
               InputLabelProps={{ shrink: true }}
               value={personData.address}
               onChange={(e) => {
@@ -87,6 +89,7 @@ export default function Edit() {
               label="Profissão"
               variant="outlined"
               InputLabelProps={{ shrink: true }}
+              required
               style={{ marginTop: '10px' }}
               value={personData.profession}
               onChange={(e) => {

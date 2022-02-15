@@ -69,6 +69,7 @@ export default function Index() {
           label="Nome"
           variant="outlined"
           value={personData.name}
+          required
           InputLabelProps={{ shrink: true }}
           onChange={(e) => {
             setPersonData({ name: e.target.value });
@@ -82,6 +83,7 @@ export default function Index() {
           variant="outlined"
           style={{ marginTop: '10px' }}
           value={personData.address}
+          required
           InputLabelProps={{ shrink: true }}
           onChange={(e) => {
             setPersonData({ address: e.target.value });
@@ -95,6 +97,7 @@ export default function Index() {
           variant="outlined"
           style={{ marginTop: '10px' }}
           value={personData.profession}
+          required
           InputLabelProps={{ shrink: true }}
           onChange={(e) => {
             setPersonData({ profession: e.target.value });
